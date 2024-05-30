@@ -38,13 +38,14 @@ This guide will help you set up and run a .NET Framework Console Application usi
     - The program will prompt you through creating your recipes click enter between each prompt.
 
 
-## Changes
-- Created Unit Tests (for CalorieChecker).
-- Recipes now have names.
-- Created delegate to check if the recipe is over 300 calories.
-- Created Search feature to search recipe by name.
+## Updates
+- Created Unit Tests (for CalorieChecker). Robust testing most scenarios covered.
+- Recipes now have names: Users are able to choose the name of their recipe but cannot have duplicate names. 
+- Created delegate to check if the recipe is over 300 calories: Deleagte will trigger if the total number of calories across all ingridients exceeds 300.
+- Created Search feature to search recipe by name. The feature allows the user to search then provides them with the full recipe displayed. 
 - Created display feature to show recipes in alphabetical order.
-- Improved Comments.
+- Improved Comments: More comments add throught the project.
+- Backend created with getters and setters. 
 - New tags created on github.
 - Improved ReadMe.
 - Improved error handling.
