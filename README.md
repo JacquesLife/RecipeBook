@@ -29,6 +29,19 @@ This guide will help you set up and run a .NET Framework Console Application usi
 7. **Run the Project**
     - Once the source code is open in Visual Studio, navigate to the green "Start" button or press `F5` to run the program.
 
+
+## Changes
+- Created Unit Tests (for CalorieChecker).
+- Recipes now have names.
+- Created delegate to check if the recipe is over 300 calories.
+- Created Search feature to search recipe by name.
+- Created display feature to show recipes in alphabetical order.
+- Improved Comments.
+- New tags created on github.
+- Improved ReadMe.
+- Improved error handling.
+
+
 ## References
 
 My referencing for completing this aplication
