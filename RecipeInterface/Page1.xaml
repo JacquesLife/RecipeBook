@@ -1,0 +1,51 @@
+﻿<Page x:Class="RecipeInterface.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Page1"
+      Background="White" Width="700" Height="700">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="10">
+            <!-- Recipe Name Display -->
+            <TextBlock x:Name="RecipeNameTextBlock" FontSize="20" FontWeight="Bold"
+                Text="{Binding CurrentRecipe.Name}" Height="27" Width="680" Margin="0,0,0,10" />
+
+            <!-- Ingredient Section -->
+            <TextBlock Text="Ingredient Name:" Height="18" Width="680" Margin="0,0,0,5"/>
+            <TextBox x:Name="IngredientNameTextBox" Height="18" Width="540" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Food Group:" Height="22" Width="680" Margin="0,0,0,5"/>
+            <TextBox x:Name="FoodGroupTextBox" Height="22" Width="540" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Preferred Unit:" Height="21" Width="680" Margin="0,0,0,5"/>
+            <TextBox x:Name="UnitsTextBox" Height="21" Width="540" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Quantity in Grams:" Height="18" Width="680" Margin="0,0,0,5"/>
+            <TextBox x:Name="QuantityInGramsTextBox" Height="18" Width="540" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Calories per Ingredient:" Height="18" Width="680" Margin="0,10,0,5"/>
+            <TextBox x:Name="CaloriesTextBox" Height="18" Width="540" Margin="0,0,0,10"/>
+
+            <!-- Add Ingredient Button -->
+            <Button Content="Add Ingredient" Click="AddIngredient_Click" Height="20" Width="680" Margin="0,10,0,10"/>
+
+            <!-- Ingredients List -->
+            <ListBox x:Name="IngredientsListBox" Height="41" Width="680" Margin="0,10,0,10" />
+
+            <!-- Step Heading -->
+            <TextBlock Text="Steps:" FontSize="16" FontWeight="Bold" Height="22" Width="680" Margin="0,20,0,5"/>
+
+            <!-- Step Description TextBox -->
+            <TextBlock Text="Enter a step description:" Height="16" Width="680" Margin="0,0,0,5"/>
+            <TextBox x:Name="StepDescriptionTextBox" Height="100" Width="663" Margin="0,0,0,10"/>
+
+            <Button Content="Enter Step" Click="EnterNewStep_Click" Height="20" Width="680" Margin="0,10,0,10"/>
+
+            <!-- Steps List -->
+            <ListBox x:Name="StepsListBox" Height="100" Width="680" Margin="0,10,0,10" />
+
+            <!-- Next Button -->
+            <Button Content="Next" Click="NextButton_Click" Height="20" Width="680" Margin="0,10,0,0"/>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

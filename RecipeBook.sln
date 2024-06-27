@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recipeBook", "recipeBook\re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{F2497B88-187B-423E-A081-A0B861C0BEEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeInterface", "RecipeInterface\RecipeInterface.csproj", "{F62A3705-28E2-45AE-B5E1-DB2E19AC6ADB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F2497B88-187B-423E-A081-A0B861C0BEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2497B88-187B-423E-A081-A0B861C0BEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2497B88-187B-423E-A081-A0B861C0BEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62A3705-28E2-45AE-B5E1-DB2E19AC6ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62A3705-28E2-45AE-B5E1-DB2E19AC6ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62A3705-28E2-45AE-B5E1-DB2E19AC6ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62A3705-28E2-45AE-B5E1-DB2E19AC6ADB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

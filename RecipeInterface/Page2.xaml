@@ -1,0 +1,27 @@
+﻿<Page x:Class="RecipeInterface.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Page2"
+      Background="White" Width="700" Height="700">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="10">
+            <!-- Recipe Name Input -->
+            <TextBlock Text="Enter Recipe Name:" Height="18" Width="680" Margin="0,0,0,5"/>
+            <TextBox x:Name="RecipeNameTextBox" Height="30" Width="200" Margin="0,0,0,10"/>
+
+            <!-- Add Recipe Button -->
+            <Button Content="Add Recipe" Click="AddRecipe_Click" Height="30" Width="100" Margin="0,10,0,10"/>
+
+            <!-- Recipes List -->
+            <TextBlock Text="Recipes:" FontSize="16" FontWeight="Bold" Height="22" Width="680" Margin="0,20,0,5"/>
+            <ListBox x:Name="RecipesListBox" Height="100" Width="680" Margin="0,10,0,10">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" Margin="0,5"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

@@ -27,7 +27,7 @@ using System.Data.Common;
 
 namespace recipeBook.Classes
 {
-    internal class IngredientsClass
+    public class IngredientsClass
     {
         private readonly List<string> recipeNames = new List<string>();
 

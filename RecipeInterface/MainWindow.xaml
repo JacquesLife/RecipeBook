@@ -1,0 +1,18 @@
+﻿<Window x:Class="RecipeInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recipe Interface" Height="450" Width="800">
+    <Grid>
+        <TabControl SelectionChanged="TabControl_SelectionChanged">
+            <TabItem Header="Recipe Name">
+                <Frame x:Name="RecipeFrame" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+            <TabItem Header="Ingredients">
+                <Frame x:Name="IngredientsFrame" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+            <TabItem Header="Scale">
+                <Frame x:Name="ScaleFrame" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

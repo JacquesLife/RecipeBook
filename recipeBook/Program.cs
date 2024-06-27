@@ -1,29 +1,6 @@
-﻿/// <summary>
-/// Name: Jacques du Plessis
-/// Student: ST10329686
-/// Module: PROG6221
-/// </summary>
-/// This program is a recipe book that allows the user to enter a recipe with ingredients, quantities, and units. 
-/// The user can then scale the recipe and reset it to the original quantities.
-/// References All
-/// https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/
-/// https://www.w3schools.com/cs/cs_operators_logical.php
-/// https://www.geeksforgeeks.org/ref-in-c-sharp/
-/// https://www.c-sharpcorner.com/article/how-to-copy-an-array-in-c-sharp/
-/// https://www.c-sharpcorner.com/UploadFile/c713c3/how-to-exit-in-C-Sharp/#
-/// https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/
-/// https://www.w3schools.com/cs/cs_operators_logical.php
-/// https://www.geeksforgeeks.org/ref-in-c-sharp/
-/// https://www.c-sharpcorner.com/article/how-to-copy-an-array-in-c-sharp/
-/// https://www.c-sharpcorner.com/UploadFile/c713c3/how-to-exit-in-C-Sharp/#
-
-
-using recipeBook.Classes;
+﻿using recipeBook.Classes;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace recipeBook
 {
@@ -34,6 +11,11 @@ namespace recipeBook
             var ingredientsClass = new IngredientsClass();
             var recipeClass = new RecipeClass();
             var recipes = new Dictionary<string, Recipe>();
+
+            // Instantiate a new RecipeClass object
+            recipeClass = new RecipeClass();
+
+            
 
             while (true)
             {
@@ -84,11 +66,12 @@ namespace recipeBook
                     Units = units,
                     ConvertedQuantities = convertedQuantities,
                     CaloriesPerIngredient = caloriesPerIngredient,
-                    FoodGroups = foodGroups,
                     StepDescription = stepDescription,
                     TotalCalories = totalCalories
                 };
                 recipes.Add(recipeName, recipe);
+
+                
 
                 // Check if the user wants to scale the recipe
                 if (recipeClass.ChooseToScaleRecipe())
@@ -146,8 +129,6 @@ namespace recipeBook
                 // Enter a new recipe
                 recipeClass.EnterNewRecipe(new List<string>(recipes.Keys));
             }
-
         }
     }
 }
-// ----------------------------------------------------END OF FILE----------------------------------------------------------------------------------------------------------------------------
