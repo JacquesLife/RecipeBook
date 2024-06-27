@@ -49,6 +49,9 @@ This guide will help you set up and run a .NET Framework Console Application usi
 - New tags created on github.
 - Improved ReadMe.
 - Improved error handling.
+- Added user Interface with pages Recipe Name, Ingridient and Scale
+- Improved Delagate with additional calorie infomation
+- Added new branch with an additional Readme on instructions on how to run the project and a step by step walkthrough. 
 
 
 ## References
